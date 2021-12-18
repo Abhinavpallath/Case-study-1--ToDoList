@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDoList</title>
+    <script src="js/todo.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="main.html">Home</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html" style="margin-left: 1150px;">Logout<span class="sr-only">(current)</span></a> 
+                </li>
+              </ul>
+            </div>
+        </nav>
+    </header>
+    <center>
+        <h1 style="margin-top: 50px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: peru; font-size: 80px;">ToDoList</h1>
+        <button type="button" class="btn btn-outline-secondary btn-lg" onclick="display()">Check Box</button>
+    </center>   
+    <div class="container col-lg-9 mt-5 pt-5 pb-5">
+        <table class="table" id = "tab" style="color:black; visibility: hidden;">
+            <thead>
+              <tr>
+                <th scope="col">User Id</th>
+                <th scope="col">Id</th>
+                <th scope="col">Title</th>
+                <th scope="col">Completed</th>
+              </tr>
+            </thead>
+            <tbody id="table">
+            </tbody>
+        </table>    
+    </div>
+</body>
+</html>
